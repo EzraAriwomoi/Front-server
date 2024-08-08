@@ -7,12 +7,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
       external: ['styled-components', 'react-icons/fa'],
-      input: 'src/main.jsx',
-      output: {
-        entryFileNames: 'assets/[name].[hash].js',
-        chunkFileNames: 'assets/[name].[hash].js',
-        assetFileNames: 'assets/[name].[hash].[ext]',
-      },
     },
   },
+  base: '/',
 });
